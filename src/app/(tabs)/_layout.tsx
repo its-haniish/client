@@ -7,38 +7,37 @@ import { Image, Text, TouchableWithoutFeedback, View } from "react-native";
 export default function RootLayout() {
     return (
         <Tabs screenOptions={screenOptions}>
-            <Tabs.Screen
-                name="Home"
-                options={{
-                    tabBarIcon: ({ color, size }) => (
-                        <Ionicons name="home-outline" size={size} color={color} />
-                    ),
-                }}
-            />
-                <Tabs.Screen
-                    name="Chat"
-                    options={{
-                        tabBarIcon: ({ color, size }) => (
-                            <Ionicons name="chatbubbles" size={size} color={color} />
-                        ),
-                    }}
-                />
-            <Tabs.Screen
-                name="Call"
-                options={{
-                    tabBarIcon: ({ color, size }) => (
-                        <Ionicons name="call" size={size} color={color} />
-                    ),
-                }}
-            />
-            <Tabs.Screen
-                name="Blogs"
+            
+            <Tabs.Screen name="Blogs"
                 options={{
                     tabBarIcon: ({ color, size }) => (
                         <Ionicons name="reader-sharp" size={size} color={color} />
                     ),
                 }}
             />
+                        <Tabs.Screen name="Call"
+                options={{
+                    tabBarIcon: ({ color, size }) => (
+                        <Ionicons name="call" size={size} color={color} />
+                    ),
+                }}
+            />
+            <Tabs.Screen name="Chat"
+                options={{
+                    tabBarIcon: ({ color, size }) => (
+                        <Ionicons name="chatbubbles" size={size} color={color} />
+                    ),
+                }}
+            />
+            <Tabs.Screen name="Home"
+                options={{
+                    tabBarIcon: ({ color, size }) => (
+                        <Ionicons name="home-outline" size={size} color={color} />
+                    ),
+                }}
+            />
+
+
         </Tabs>);
 }
 
